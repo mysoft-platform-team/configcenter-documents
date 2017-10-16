@@ -15,7 +15,7 @@
 ## 客户端调用接口
 
 1. 配置中心客户端初始化
-···c#
+```c#
 /// <summary>
 /// 执行客户端初始化动作（使用传入的参数）
 /// </summary>
@@ -28,7 +28,7 @@ public static void Init(string serviceUri, string envKey, string appId);
 /// 执行客户端初始化动作（使用配置的值）
 /// </summary>
 public static void Init();
-···
+```
 
 1. 按环境标识和站点标识读取全部配置
 
