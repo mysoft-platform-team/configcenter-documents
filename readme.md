@@ -1,6 +1,6 @@
-# 明源云配置中心开放文档
+# 明源云配置中心调用文档
 
-## 客户端配置
+## 调用前准备
 
 1. 引用Mysoft.Config.Client.DLL
 2. 初次调用前应执行配置中心客户端的初始化：Mysoft.Config.Client.ConfigManager.Init()
@@ -11,6 +11,7 @@
 <!--配置中心：站点标识-->
 <add key="configcenter-appid" value="erp"/>
 ```
+4. 通过```Mysoft.Config.Client.ConfigManager```对象调用以下API。
 
 ## 配置读写相关接口
 
