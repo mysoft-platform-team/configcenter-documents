@@ -2,7 +2,7 @@
 
 ## 调用前准备
 
-1. 引用Mysoft.Config.Client.DLL。[下载地址](blob/master/ConfigCenterClientDLL.zip?raw=true)
+1. 引用Mysoft.Config.Client.DLL。[下载地址](https://github.com/mysoft-platform-team/configcenter-documents/blob/master/ConfigCenterClientDLL.zip?raw=true)
 2. 初次调用前应执行配置中心客户端的初始化：Mysoft.Config.Client.ConfigManager.Init()
 3. 配置当前站点的默认环境标识和默认站点标识：
 ```xml
