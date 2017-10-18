@@ -100,12 +100,44 @@ public static string[] GetSiteList(string envKey)
 3. 删除一个站点
 ```c#
 /// <summary>
-/// 向配置服务删除一个站点
+/// 读取站点信息
 /// </summary>
-/// <param name="envKey">环境标识</param>
+/// <param name="envKey">环境标识，传入null默认当前环境</param>
 /// <param name="siteKey">站点标识</param>
-public static void DeleteSite(string envKey, string siteKey)
+/// <returns></returns>
+public static Site GetSiteInfo(string envKey, string siteKey) 
+
+/// <summary>
+/// 一个站点
+/// </summary>
+[Serializable]
+public class Site
+{
+	/// <summary>
+	/// 站点Key
+	/// </summary>
+	[XmlAttribute("key")]
+	[JsonProperty("key")]
+	public string Key { get; set; }
+
+	/// <summary>
+	/// 名称
+	/// </summary>
+	[XmlAttribute("name")]
+	[JsonProperty("name")]
+	public string Name { get; set; }
+
+	/// <summary>
+	/// 站点地址
+	/// </summary>
+	[XmlAttribute("url")]
+	[JsonProperty("url")]
+	public string Url { get; set; }
+}
 ```
+
+4. 读取站点详情
+
 
 ## 环境相关接口
 
