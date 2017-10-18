@@ -113,26 +113,26 @@ public static Site GetSiteInfo(string envKey, string siteKey)
 [Serializable]
 public class Site
 {
-	/// <summary>
-	/// 站点Key
-	/// </summary>
-	[XmlAttribute("key")]
-	[JsonProperty("key")]
-	public string Key { get; set; }
+    /// <summary>
+    /// 站点Key
+    /// </summary>
+    [XmlAttribute("key")]
+    [JsonProperty("key")]
+    public string Key { get; set; }
 
-	/// <summary>
-	/// 名称
-	/// </summary>
-	[XmlAttribute("name")]
-	[JsonProperty("name")]
-	public string Name { get; set; }
+    /// <summary>
+    /// 名称
+    /// </summary>
+    [XmlAttribute("name")]
+    [JsonProperty("name")]
+    public string Name { get; set; }
 
-	/// <summary>
-	/// 站点地址
-	/// </summary>
-	[XmlAttribute("url")]
-	[JsonProperty("url")]
-	public string Url { get; set; }
+    /// <summary>
+    /// 站点地址
+    /// </summary>
+    [XmlAttribute("url")]
+    [JsonProperty("url")]
+    public string Url { get; set; }
 }
 ```
 
